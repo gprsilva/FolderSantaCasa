@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Do Ventre Ao Mundo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+    <header class="topo">
+        <div class="topo__conteudo">
+            <span class="topo__marca">
+                <img src="quadrinhos/logo.png" alt="">
+            </span>
+            <div>
+                <h1>Do Ventre Ao Mundo</h1>
+                <p class="topo__subtitulo">Cuidados com o bebê, com tradução em Libras.</p>
+            </div>
+        </div>
+    </header>
+
+    <main id="conteudo" class="layout">
+        <section class="quadrinho" aria-labelledby="titulo-quadrinho">
+            <h2 id="titulo-quadrinho" class="quadrinho__titulo">Desengasgo</h2>
+
+            <figure class="quadrinho__figura">
+                <img id="imagem" src="quadrinhos/ManobraDesengasgo.jpg" alt="Quadrinho com o passo a passo do desengasgo em bebês.">
+            </figure>
+
+            <div class="seletor">
+                <span id="rotulo-a" class="seletor__rotulo">Desengasgo</span>
+                <button id="alternar" class="seletor__botao" type="button" role="switch" aria-checked="false" aria-label="Mostrar coto umbilical">
+                    <span class="seletor__bolinha"></span>
+                </button>
+                <span id="rotulo-b" class="seletor__rotulo">Coto umbilical</span>
+            </div>
+        </section>
+
+        <section class="instrucoes" aria-labelledby="titulo-instrucoes">
+            <h2 id="titulo-instrucoes" class="instrucoes__titulo">Passo a passo</h2>
+            <p id="resumo" class="instrucoes__resumo"></p>
+            <ol id="passos" class="passos" aria-live="polite"></ol>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Conteúdo informativo. Em caso de emergência, ligue para o SAMU (192).</p>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>
